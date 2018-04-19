@@ -1,0 +1,16 @@
+
+
+.style1 {
+	padding:  2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left:  2px;
+	margin-right: 2px;
+	font-size: medium;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #AAAAAA;
+	color:#FF0000;
+	border: 1px solid blue;
+	display:inline-block;
+}

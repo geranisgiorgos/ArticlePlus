@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="2.5.0" method="upgrade">
+	<name>ARTICLEPLUS</name>
+	<creationDate>June 2013</creationDate>
+	<description><![CDATA[<p> Αυτόματη παραγωγή λέξεων-κλειδιών</p><p>Automatically produce keywords for articles</p>]]></description> 
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<administration>
+		<menu link="option=com_articleplus&amp;action=prodkeys&amp;task=main">ARTICLEPLUS</menu>
+		<submenu>
+			<menu link="option=com_articleplus&amp;action=prodkeys&amp;task=view">CONTENT1</menu>
+			<menu link="option=com_articleplus&amp;action=prodkeys&amp;task=blocked_words">BLOCKED1</menu>
+			<menu link="option=com_articleplus&amp;action=prodkeys&amp;task=showconfig">CONFIGURATION1</menu>
+			<menu link="option=com_articleplus&amp;action=prodkeys&amp;task=searchbykeyword">SEARCHKEYWORD</menu>
+		</submenu>
+		<files folder="">
+			<filename>index.html</filename>
+			<filename>articleplus.php</filename>
+			<filename>articleplus1.php</filename>
+			<filename>controlpanel.php</filename>
+			<filename>edit.php</filename>
+			<filename>main.php</filename>
+			<filename>blocked.php</filename>
+			<filename>articleplus.css</filename>
+			<filename>search.php</filename>
+			<filename>images/index.html</filename>
+			<filename>images/contents.png</filename>
+			<filename>images/configuration.png</filename>
+			<filename>images/p1.png</filename>
+			<filename>images/blocked.png</filename>
+			<filename>images/search.png</filename>
+			<filename>install.sql</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">languages/en-GB.com_articleplus.ini</language>
+			<language tag="el-GR">languages/el-GR.com_articleplus.ini</language>
+		</languages>
+	</administration>
+</install>
